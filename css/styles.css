@@ -1,0 +1,229 @@
+body {
+  background-color: #161a34;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.nav {
+  background-color: #0b0d14;
+  color: #fcd0b3;
+  font-family: "Julius Sans One", sans-serif;
+  -webkit-box-shadow: -1px -7px 28px -10px #fcd0b3;
+          box-shadow: -1px -7px 28px -10px #fcd0b3;
+  padding: 40px;
+}
+
+.nav .navbar-brand {
+  color: #fcd0b3;
+}
+
+.nav .nav-link {
+  color: #fcd0b3;
+}
+
+.nav .li {
+  font-size: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  margin-left: 7px;
+  padding: 0;
+  color: #fcd0b3;
+}
+
+.nav .link-0 {
+  color: #fcd0b3;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #161a34;
+  padding: 25px;
+  color: #fcd0b3;
+}
+
+.container .title {
+  font-size: 2em;
+  color: #fcd0b3;
+}
+
+.container .text {
+  color: #fcd0b3;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.container-main {
+  background-color: #fcd0b3;
+  margin: 20px;
+  padding: 25px;
+}
+
+.container-main .title-example {
+  color: #161a34;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.container-main .text-example {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #161a34;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.image-section {
+  background-color: #161a34;
+  margin: 20px;
+  padding: 25px;
+  color: #fcd0b3;
+  border: 2px solid #fcd0b3;
+}
+
+.image-section .img-size {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+}
+
+.image-section .img-size:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.image-section .img-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #fcd0b3;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.image-section .button-style {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fcd0b3;
+  color: #161a34;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+  margin: auto;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+  width: 100px;
+  border: 2px #161a34;
+  border-radius: 10px;
+}
+
+.image-section .button-style:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.ending-lorem {
+  color: #fcd0b3;
+  padding: 25px;
+}
+
+.footer {
+  background-color: #0b0d14;
+  color: #fcd0b3;
+  font-family: "Julius Sans One", sans-serif;
+  padding: 30px;
+}
+
+.hr {
+  background-color: #fcd0b3;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: #fcd0b3;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    -webkit-transform: rotateX(-75deg);
+            transform: rotateX(-75deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+  body, html {
+    scroll-behavior: smooth;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .image-section {
+    background-color: #161a34;
+    margin: 20px;
+    padding: 25px;
+    color: #fcd0b3;
+    border: 2px solid #fcd0b3;
+  }
+  .image-section .hr {
+    background-color: #fcd0b3;
+  }
+  .image-section .img-size {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 5px 5px 5px 0px black;
+            box-shadow: 5px 5px 5px 0px black;
+  }
+  .image-section .img-text {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: #fcd0b3;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .image-section .button-style {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fcd0b3;
+    color: #161a34;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0px black;
+            box-shadow: 5px 5px 5px 0px black;
+    width: 100px;
+    border: 2px #161a34;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
