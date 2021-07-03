@@ -9,16 +9,25 @@ $font-fam2: 'Lato', sans-serif;
 $img-height : 500px;
 $img-width : 500px;
 
-body {
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+    body {
     background-color: $primary-color;
     font-family: $font-fam;
+    overflow-x: hidden;
+    }
 }
 
 .nav {
     background-color: #0b0d14;
     color: $text-color;
     font-family: $font-fam ;
-    box-shadow: -1px -7px 28px -10px #fcd0b3;
     padding: 40px;
 
     .navbar-brand {
@@ -33,7 +42,6 @@ body {
         align-items: center;
         margin-right: 10px;
         margin-left: 7px;
-        padding: 0;
         color: $text-color;
     }
     .link-0{
@@ -55,6 +63,13 @@ body {
         font-family: $font-fam2;
         letter-spacing: 2px;
         font-weight: 700;
+    }
+    .link {
+        text-decoration: none;
+        color : $text-color;
+    }
+    .link:hover {
+        color :whitesmoke;
     }
 }
 
