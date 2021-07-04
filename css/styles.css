@@ -89,6 +89,11 @@ html body {
   font-weight: 700;
 }
 
+.container-main .img-filter {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .image-section {
   background-color: #161a34;
   margin: 20px;
