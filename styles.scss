@@ -16,7 +16,7 @@ html {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-
+    
     body {
     background-color: $primary-color;
     font-family: $font-fam;
@@ -89,6 +89,9 @@ html {
         color : $text-color2;
         letter-spacing: 2px;
         font-weight: 700;
+    }
+    .img-filter {
+        filter:invert(100%);
     }
 }
 
