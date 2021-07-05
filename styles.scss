@@ -1,11 +1,27 @@
-$primary-color: #161a34;
-$secondary-color: #fcd0b3;
-$text-color: #fcd0b3;
-$text-color2:#161a34;
+//Mondstadt
+$primary-color_mondstadt:#6fc5af;
+$secondary-color_mondstadt:#a2e5db ;
+$text-color_mondstadt:#161a34;
+$text-color_mondstadt2:#234234;
+
+//Liyue
+$primary-color_liyue:#79f8a9;
+$secondary-color_liyue:#fae100;
+$text-color_liyue:#ff3333;
+$text-color_liyue2:#234234;
+//Inazuma
+$primary-color_inazuma: #161a34;
+$secondary-color_inazuma: #fcd0b3;
+$text-color_inazuma: #fcd0b3;
+$text-color_inazuma2:#161a34;
+
+//Margin & misc
 $margin-box: 20px;
 $padding-box: 25px;
 $font-fam:'Julius Sans One', sans-serif;
 $font-fam2: 'Lato', sans-serif;
+
+//Character's image universal size
 $img-height : 500px;
 $img-width : 500px;
 
@@ -17,94 +33,283 @@ html {
     padding: 0px;
     overflow-x: hidden;
     
-    body {
-    background-color: $primary-color;
+    //Mondstadt
+    .body_mondstadt {
+    background-color: $primary-color_mondstadt;
+    font-family: $font-fam;
+    overflow-x: hidden;
+    }
+    //Liyue
+    .body_liyue {
+        background-color: $primary-color_liyue;
+    font-family: $font-fam;
+    overflow-x: hidden;
+    }
+    //Inazuma
+    .body_inazuma {
+    background-color: $primary-color_inazuma;
     font-family: $font-fam;
     overflow-x: hidden;
     }
 }
 
+
+//NAV
 .nav {
     background-color: #0b0d14;
-    color: $text-color;
+    color: $text-color_inazuma;
     font-family: $font-fam ;
     padding: 40px;
     font-weight: 700;
 
     .navbar-brand {
-        color: $text-color;
+        color: $text-color_inazuma;
+        font-weight: 700;
     }
 
     .nav-link {
-        color: $text-color;
+        color: $text-color_inazuma;
+        font-weight: 700;
     }
     .li {
         font-size: 90%;
         align-items: center;
         margin-right: 10px;
         margin-left: 7px;
-        color: $text-color;
+        color: $text-color_inazuma;
         font-weight: 700;
     }
     .link-0{
-        color: $text-color;
+        color: $text-color_inazuma;
         text-decoration: none;
+        font-weight: 700;
     }
 }
+
 
 .img-filter {
     filter:invert(100%);
 }
 
-.container {
-    background-color: $primary-color;
+
+//CONTAINERS
+
+.container_mondstadt {
+    background-color: $primary-color_mondstadt;
     padding: $padding-box;
-    color: $text-color;
+    color: $text-color_mondstadt;
+    border: 2px black;
+    font-weight: 700;
 
     .title {
         font-size: 2em;
-        color: $text-color;
+        color: $text-color_mondstadt;
+        font-weight: 700;
     }
     .text {
-        color: $text-color;
+        color: $text-color_mondstadt;
         font-family: $font-fam2;
         letter-spacing: 2px;
         font-weight: 700;
     }
     .link {
         text-decoration: none;
-        color : $text-color;
+        color : $text-color_mondstadt;
+        font-weight: 700;
     }
     .link:hover {
         color :whitesmoke;
     }
 }
 
-.container-main {
-    background-color: $secondary-color;
+.container_liyue {
+    background-color: $primary-color_mondstadt;
+    padding: $padding-box;
+    color: $text-color_mondstadt;
+    border: 2px black;
+    font-weight: 700;
+
+    .title {
+        font-size: 2em;
+        color: $text-color_mondstadt;
+        font-weight: 700;
+    }
+    .text {
+        color: $text-color_mondstadt;
+        font-family: $font-fam2;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .link {
+        text-decoration: none;
+        color : $text-color_mondstadt;
+        font-weight: 700;
+    }
+    .link:hover {
+        color :whitesmoke;
+    }
+}
+
+.container_inazuma {
+    background-color: $primary-color_inazuma;
+    padding: $padding-box;
+    color: $text-color_inazuma;
+    font-weight: 700;
+
+    .title {
+        font-size: 2em;
+        color: $text-color_inazuma;
+        font-weight: 700;
+    }
+    .text {
+        color: $text-color_inazuma;
+        font-family: $font-fam2;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .link {
+        text-decoration: none;
+        color : $text-color_inazuma;
+        font-weight: 700;
+    }
+    .link:hover {
+        color :whitesmoke;
+    }
+}
+
+// MAIN CONTAINERS
+
+.container-main_mondstadt {
+    background-color: $secondary-color_mondstadt;
     margin : $margin-box;
     padding: $padding-box;
 
     .title-example {
-        color: $text-color2;
+        color: $text-color_mondstadt2;
         font-size: 1.4em;
         font-weight: 900;
     }
     .text-example {
         font-family: $font-fam2;
         font-size: 1em;
-        color : $text-color2;
+        color : $text-color_mondstadt2;
         letter-spacing: 2px;
         font-weight: 700;
     }
 }
 
-.image-section {
-    background-color: $primary-color;
+.container-main_liyue {
+    background-color: $secondary-color_mondstadt;
+    margin : $margin-box;
+    padding: $padding-box;
+
+    .title-example {
+        color: $text-color_mondstadt2;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+    .text-example {
+        font-family: $font-fam2;
+        font-size: 1em;
+        color : $text-color_mondstadt2;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
+
+
+.container-main_inazuma {
+    background-color: $secondary-color_inazuma;
+    margin : $margin-box;
+    padding: $padding-box;
+
+    .title-example {
+        color: $text-color_inazuma2;
+        font-size: 1.4em;
+        font-weight: 900;
+    }
+    .text-example {
+        font-family: $font-fam2;
+        font-size: 1em;
+        color : $text-color_inazuma2;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
+// IMAGE SECTION
+
+.image-section_mondstadt {
+    background-color: $primary-color_mondstadt;
     margin: $margin-box;
     padding: $padding-box;
-    color: $text-color;
+    color: $text-color_mondstadt;
+    border: 2px solid $text-color_mondstadt;
+    font-weight: 700;
+
+    .img-size {
+        height: $img-height;
+        width: $img-width;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+    .img-size-special {
+        height: 500px;
+        width: 850px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+
+    .img-size-special:hover {
+        box-shadow: 0px 0px 21px 5px #fcd0b3;
+    }
+    .img-size:hover {
+        box-shadow: 0px 0px 21px 5px #fcd0b3;
+    }
+
+    .img-text {
+        font-family: $font-fam2;
+        font-size: 1em;
+        color : $text-color_mondstadt;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .ele-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-style {
+        text-decoration: none;
+        padding: 10px;
+        background-color: $secondary-color_mondstadt;
+        color: $text-color_mondstadt2;
+        font-family: $font-fam;
+        font-weight: 700;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 0px black;
+        width: 120px;
+        border: 2px $primary-color_mondstadt;
+        border-radius: 10px;
+    }
+    .button-style:hover {
+        box-shadow: 0px 0px 21px 5px #fcd0b3;
+    }
+
+}
+
+.image-section_inazuma {
+    background-color: $primary-color_inazuma;
+    margin: $margin-box;
+    padding: $padding-box;
+    color: $text-color_inazuma;
     border: 2px solid #fcd0b3;
+    font-weight: 700;
 
     .img-size {
         height: $img-height;
@@ -121,7 +326,7 @@ html {
     .img-text {
         font-family: $font-fam2;
         font-size: 1em;
-        color : $text-color;
+        color : $text-color_inazuma;
         letter-spacing: 2px;
         font-weight: 700;
     }
@@ -134,15 +339,15 @@ html {
     .button-style {
         text-decoration: none;
         padding: 10px;
-        background-color: $secondary-color;
-        color: $primary-color;
+        background-color: $secondary-color_inazuma;
+        color: $primary-color_inazuma;
         font-family: $font-fam;
         font-weight: 700;
         margin: auto;
         cursor: pointer;
         box-shadow: 5px 5px 5px 0px black;
-        width: 100px;
-        border: 2px #161a34;
+        width: 120px;
+        border: 2px $primary-color_inazuma;
         border-radius: 10px;
     }
     .button-style:hover {
@@ -151,26 +356,47 @@ html {
 
 }
 
-.ending-lorem {
-    color: $text-color;
+
+//ENDING
+.ending-mondstadt {
+    color: $text-color_mondstadt;
     padding: $padding-box;
+    font-weight: 700;
 }
+
+.ending-inazuma {
+    color: $text-color_inazuma;
+    padding: $padding-box;
+    font-weight: 700;
+}
+
+.ending-inazuma {
+    color: $text-color_inazuma;
+    padding: $padding-box;
+    font-weight: 700;
+}
+
 
 .footer {
     background-color: #0b0d14;
-    color: $text-color;
+    color: $text-color_inazuma;
     font-family: $font-fam ;
     padding: 30px;
 }
-.hr {
-    background-color: $text-color;
+
+.hr_inazuma {
+    background-color: $text-color_inazuma;
+}
+
+.hr_mondstadt {
+    background-color: $text-color_mondstadt;
 }
 
 
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
     .navbar .nav-item:hover .nav-link{ 
-        color: $text-color; 
+        color: $text-color_inazuma; 
     }
     .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
     .navbar .dropdown-menu.fade-up{ top:180%;  }
@@ -186,16 +412,13 @@ html {
         padding: 0px;
         overflow-x: hidden;
     }
-    .image-section {
-        background-color: $primary-color;
+    .image-section_mondstadt {
+        background-color: $primary-color_mondstadt;
         margin: $margin-box;
         padding: $padding-box;
-        color: $text-color;
-        border: 2px solid #fcd0b3;
-    
-        .hr {
-            background-color: #fcd0b3;
-        }
+        color: $text-color_mondstadt;
+        border: 2px solid $text-color_mondstadt;
+        font-weight: 700;
     
         .img-size {
             height: 250px;
@@ -205,26 +428,104 @@ html {
             margin-right: auto;
             box-shadow: 5px 5px 5px 0px black;
         }
-    
+        .img-size:hover {
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+        }
+
+        .img-size-special {
+            height: 250px;
+            width: 310px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 5px 5px 5px 0px black;
+        }
+        .img-size-special:hover {
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+        }
+
         .img-text {
             font-family: $font-fam2;
             font-size: 1em;
-            color : $text-color;
+            color : $text-color_mondstadt;
             letter-spacing: 2px;
             font-weight: 700;
         }
+        .ele-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
         .button-style {
             text-decoration: none;
             padding: 10px;
-            background-color: $secondary-color;
-            color: $primary-color;
+            background-color: $secondary-color_mondstadt;
+            color: $text-color_mondstadt2;
             font-family: $font-fam;
             font-weight: 700;
             margin: auto;
             cursor: pointer;
             box-shadow: 5px 5px 5px 0px black;
-            width: 100px;
-            border: 2px #161a34;
+            width: 120px;
+            border: 2px $primary-color_mondstadt;
+            border-radius: 10px;
+        }
+        .button-style:hover {
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+        }
+    
+    }
+    
+    .image-section_inazuma {
+        background-color: $primary-color_inazuma;
+        margin: $margin-box;
+        padding: $padding-box;
+        color: $text-color_inazuma;
+        border: 2px solid #fcd0b3;
+        font-weight: 700;
+    
+        .img-size {
+            height: 250px;
+            width: 250px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 5px 5px 5px 0px black;
+        }
+        .img-size:hover {
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+        }
+    
+        .img-text {
+            font-family: $font-fam2;
+            font-size: 1em;
+            color : $text-color_inazuma;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        .ele-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .button-style {
+            text-decoration: none;
+            padding: 10px;
+            background-color: $secondary-color_inazuma;
+            color: $primary-color_inazuma;
+            font-family: $font-fam;
+            font-weight: 700;
+            margin: auto;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px 0px black;
+            width: 120px;
+            border: 2px $primary-color_inazuma;
+            border-radius: 10px;
+        }
+        .button-style:hover {
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
         }
     
     }
