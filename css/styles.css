@@ -6,7 +6,19 @@ html {
   overflow-x: hidden;
 }
 
-html body {
+html .body_mondstadt {
+  background-color: #6fc5af;
+  font-family: "Julius Sans One", sans-serif;
+  overflow-x: hidden;
+}
+
+html .body_liyue {
+  background-color: #79f8a9;
+  font-family: "Julius Sans One", sans-serif;
+  overflow-x: hidden;
+}
+
+html .body_inazuma {
   background-color: #161a34;
   font-family: "Julius Sans One", sans-serif;
   overflow-x: hidden;
@@ -22,10 +34,12 @@ html body {
 
 .nav .navbar-brand {
   color: #fcd0b3;
+  font-weight: 700;
 }
 
 .nav .nav-link {
   color: #fcd0b3;
+  font-weight: 700;
 }
 
 .nav .li {
@@ -42,6 +56,7 @@ html body {
 .nav .link-0 {
   color: #fcd0b3;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .img-filter {
@@ -49,46 +64,151 @@ html body {
           filter: invert(100%);
 }
 
-.container {
+.container_mondstadt {
+  background-color: #6fc5af;
+  padding: 25px;
+  color: #161a34;
+  border: 2px black;
+  font-weight: 700;
+}
+
+.container_mondstadt .title {
+  font-size: 2em;
+  color: #161a34;
+  font-weight: 700;
+}
+
+.container_mondstadt .text {
+  color: #161a34;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.container_mondstadt .link {
+  text-decoration: none;
+  color: #161a34;
+  font-weight: 700;
+}
+
+.container_mondstadt .link:hover {
+  color: whitesmoke;
+}
+
+.container_liyue {
+  background-color: #6fc5af;
+  padding: 25px;
+  color: #161a34;
+  border: 2px black;
+  font-weight: 700;
+}
+
+.container_liyue .title {
+  font-size: 2em;
+  color: #161a34;
+  font-weight: 700;
+}
+
+.container_liyue .text {
+  color: #161a34;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.container_liyue .link {
+  text-decoration: none;
+  color: #161a34;
+  font-weight: 700;
+}
+
+.container_liyue .link:hover {
+  color: whitesmoke;
+}
+
+.container_inazuma {
   background-color: #161a34;
   padding: 25px;
   color: #fcd0b3;
+  font-weight: 700;
 }
 
-.container .title {
+.container_inazuma .title {
   font-size: 2em;
   color: #fcd0b3;
+  font-weight: 700;
 }
 
-.container .text {
+.container_inazuma .text {
   color: #fcd0b3;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
 }
 
-.container .link {
+.container_inazuma .link {
   text-decoration: none;
   color: #fcd0b3;
+  font-weight: 700;
 }
 
-.container .link:hover {
+.container_inazuma .link:hover {
   color: whitesmoke;
 }
 
-.container-main {
+.container-main_mondstadt {
+  background-color: #a2e5db;
+  margin: 20px;
+  padding: 25px;
+}
+
+.container-main_mondstadt .title-example {
+  color: #234234;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.container-main_mondstadt .text-example {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #234234;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.container-main_liyue {
+  background-color: #a2e5db;
+  margin: 20px;
+  padding: 25px;
+}
+
+.container-main_liyue .title-example {
+  color: #234234;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.container-main_liyue .text-example {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #234234;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.container-main_inazuma {
   background-color: #fcd0b3;
   margin: 20px;
   padding: 25px;
 }
 
-.container-main .title-example {
+.container-main_inazuma .title-example {
   color: #161a34;
   font-size: 1.4em;
   font-weight: 900;
 }
 
-.container-main .text-example {
+.container-main_inazuma .text-example {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: #161a34;
@@ -96,15 +216,16 @@ html body {
   font-weight: 700;
 }
 
-.image-section {
-  background-color: #161a34;
+.image-section_mondstadt {
+  background-color: #6fc5af;
   margin: 20px;
   padding: 25px;
-  color: #fcd0b3;
-  border: 2px solid #fcd0b3;
+  color: #161a34;
+  border: 2px solid #161a34;
+  font-weight: 700;
 }
 
-.image-section .img-size {
+.image-section_mondstadt .img-size {
   height: 500px;
   width: 500px;
   display: block;
@@ -114,12 +235,86 @@ html body {
           box-shadow: 5px 5px 5px 0px black;
 }
 
-.image-section .img-size:hover {
+.image-section_mondstadt .img-size-special {
+  height: 500px;
+  width: 850px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+}
+
+.image-section_mondstadt .img-size-special:hover {
   -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
           box-shadow: 0px 0px 21px 5px #fcd0b3;
 }
 
-.image-section .img-text {
+.image-section_mondstadt .img-size:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.image-section_mondstadt .img-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #161a34;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.image-section_mondstadt .ele-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-section_mondstadt .button-style {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #a2e5db;
+  color: #234234;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+  margin: auto;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+  width: 120px;
+  border: 2px #6fc5af;
+  border-radius: 10px;
+}
+
+.image-section_mondstadt .button-style:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.image-section_inazuma {
+  background-color: #161a34;
+  margin: 20px;
+  padding: 25px;
+  color: #fcd0b3;
+  border: 2px solid #fcd0b3;
+  font-weight: 700;
+}
+
+.image-section_inazuma .img-size {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+}
+
+.image-section_inazuma .img-size:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.image-section_inazuma .img-text {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: #fcd0b3;
@@ -127,13 +322,13 @@ html body {
   font-weight: 700;
 }
 
-.image-section .ele-logo {
+.image-section_inazuma .ele-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.image-section .button-style {
+.image-section_inazuma .button-style {
   text-decoration: none;
   padding: 10px;
   background-color: #fcd0b3;
@@ -144,19 +339,32 @@ html body {
   cursor: pointer;
   -webkit-box-shadow: 5px 5px 5px 0px black;
           box-shadow: 5px 5px 5px 0px black;
-  width: 100px;
+  width: 120px;
   border: 2px #161a34;
   border-radius: 10px;
 }
 
-.image-section .button-style:hover {
+.image-section_inazuma .button-style:hover {
   -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
           box-shadow: 0px 0px 21px 5px #fcd0b3;
 }
 
-.ending-lorem {
+.ending-mondstadt {
+  color: #161a34;
+  padding: 25px;
+  font-weight: 700;
+}
+
+.ending-inazuma {
   color: #fcd0b3;
   padding: 25px;
+  font-weight: 700;
+}
+
+.ending-inazuma {
+  color: #fcd0b3;
+  padding: 25px;
+  font-weight: 700;
 }
 
 .footer {
@@ -166,8 +374,12 @@ html body {
   padding: 30px;
 }
 
-.hr {
+.hr_inazuma {
   background-color: #fcd0b3;
+}
+
+.hr_mondstadt {
+  background-color: #161a34;
 }
 
 @media all and (min-width: 992px) {
@@ -213,17 +425,15 @@ html body {
     padding: 0px;
     overflow-x: hidden;
   }
-  .image-section {
-    background-color: #161a34;
+  .image-section_mondstadt {
+    background-color: #6fc5af;
     margin: 20px;
     padding: 25px;
-    color: #fcd0b3;
-    border: 2px solid #fcd0b3;
+    color: #161a34;
+    border: 2px solid #161a34;
+    font-weight: 700;
   }
-  .image-section .hr {
-    background-color: #fcd0b3;
-  }
-  .image-section .img-size {
+  .image-section_mondstadt .img-size {
     height: 250px;
     width: 250px;
     display: block;
@@ -232,14 +442,88 @@ html body {
     -webkit-box-shadow: 5px 5px 5px 0px black;
             box-shadow: 5px 5px 5px 0px black;
   }
-  .image-section .img-text {
+  .image-section_mondstadt .img-size:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+  }
+  .image-section_mondstadt .img-size-special {
+    height: 250px;
+    width: 310px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 5px 5px 5px 0px black;
+            box-shadow: 5px 5px 5px 0px black;
+  }
+  .image-section_mondstadt .img-size-special:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+  }
+  .image-section_mondstadt .img-text {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: #161a34;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .image-section_mondstadt .ele-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-section_mondstadt .button-style {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #a2e5db;
+    color: #234234;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 700;
+    margin: auto;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0px black;
+            box-shadow: 5px 5px 5px 0px black;
+    width: 120px;
+    border: 2px #6fc5af;
+    border-radius: 10px;
+  }
+  .image-section_mondstadt .button-style:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+  }
+  .image-section_inazuma {
+    background-color: #161a34;
+    margin: 20px;
+    padding: 25px;
+    color: #fcd0b3;
+    border: 2px solid #fcd0b3;
+    font-weight: 700;
+  }
+  .image-section_inazuma .img-size {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 5px 5px 5px 0px black;
+            box-shadow: 5px 5px 5px 0px black;
+  }
+  .image-section_inazuma .img-size:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
+  }
+  .image-section_inazuma .img-text {
     font-family: "Lato", sans-serif;
     font-size: 1em;
     color: #fcd0b3;
     letter-spacing: 2px;
     font-weight: 700;
   }
-  .image-section .button-style {
+  .image-section_inazuma .ele-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-section_inazuma .button-style {
     text-decoration: none;
     padding: 10px;
     background-color: #fcd0b3;
@@ -250,8 +534,13 @@ html body {
     cursor: pointer;
     -webkit-box-shadow: 5px 5px 5px 0px black;
             box-shadow: 5px 5px 5px 0px black;
-    width: 100px;
+    width: 120px;
     border: 2px #161a34;
+    border-radius: 10px;
+  }
+  .image-section_inazuma .button-style:hover {
+    -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+            box-shadow: 0px 0px 21px 5px #fcd0b3;
   }
 }
 /*# sourceMappingURL=styles.css.map */
