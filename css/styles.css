@@ -17,6 +17,7 @@ html body {
   color: #fcd0b3;
   font-family: "Julius Sans One", sans-serif;
   padding: 40px;
+  font-weight: 700;
 }
 
 .nav .navbar-brand {
@@ -35,11 +36,17 @@ html body {
   margin-right: 10px;
   margin-left: 7px;
   color: #fcd0b3;
+  font-weight: 700;
 }
 
 .nav .link-0 {
   color: #fcd0b3;
   text-decoration: none;
+}
+
+.img-filter {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .container {
@@ -87,11 +94,6 @@ html body {
   color: #161a34;
   letter-spacing: 2px;
   font-weight: 700;
-}
-
-.container-main .img-filter {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
 }
 
 .image-section {
