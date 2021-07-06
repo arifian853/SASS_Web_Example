@@ -13,7 +13,7 @@ html .body_mondstadt {
 }
 
 html .body_liyue {
-  background-color: #79f8a9;
+  background-color: #D2A881;
   font-family: "Julius Sans One", sans-serif;
   overflow-x: hidden;
 }
@@ -96,21 +96,21 @@ html .body_inazuma {
 }
 
 .container_liyue {
-  background-color: #6fc5af;
+  background-color: #D2A881;
   padding: 25px;
-  color: #161a34;
+  color: #00202F;
   border: 2px black;
   font-weight: 700;
 }
 
 .container_liyue .title {
   font-size: 2em;
-  color: #161a34;
+  color: #00202F;
   font-weight: 700;
 }
 
 .container_liyue .text {
-  color: #161a34;
+  color: #00202F;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   font-weight: 700;
@@ -118,7 +118,7 @@ html .body_inazuma {
 
 .container_liyue .link {
   text-decoration: none;
-  color: #161a34;
+  color: #00202F;
   font-weight: 700;
 }
 
@@ -177,13 +177,13 @@ html .body_inazuma {
 }
 
 .container-main_liyue {
-  background-color: #a2e5db;
+  background-color: #AB6946;
   margin: 20px;
   padding: 25px;
 }
 
 .container-main_liyue .title-example {
-  color: #234234;
+  color: #161a34;
   font-size: 1.4em;
   font-weight: 900;
 }
@@ -191,7 +191,7 @@ html .body_inazuma {
 .container-main_liyue .text-example {
   font-family: "Lato", sans-serif;
   font-size: 1em;
-  color: #234234;
+  color: #161a34;
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -290,6 +290,65 @@ html .body_inazuma {
           box-shadow: 0px 0px 21px 5px #fcd0b3;
 }
 
+.image-section_liyue {
+  background-color: #D2A881;
+  margin: 20px;
+  padding: 25px;
+  color: #00202F;
+  border: 2px solid #AB6946;
+  font-weight: 700;
+}
+
+.image-section_liyue .img-size {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+}
+
+.image-section_liyue .img-size:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
+.image-section_liyue .img-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #00202F;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.image-section_liyue .ele-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-section_liyue .button-style {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #AB6946;
+  color: #D2A881;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+  margin: auto;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px 0px black;
+          box-shadow: 5px 5px 5px 0px black;
+  width: 120px;
+  border: 2px #D2A881;
+  border-radius: 10px;
+}
+
+.image-section_liyue .button-style:hover {
+  -webkit-box-shadow: 0px 0px 21px 5px #fcd0b3;
+          box-shadow: 0px 0px 21px 5px #fcd0b3;
+}
+
 .image-section_inazuma {
   background-color: #161a34;
   margin: 20px;
@@ -355,8 +414,8 @@ html .body_inazuma {
   font-weight: 700;
 }
 
-.ending-inazuma {
-  color: #fcd0b3;
+.ending-liyue {
+  color: #00202F;
   padding: 25px;
   font-weight: 700;
 }
@@ -374,12 +433,16 @@ html .body_inazuma {
   padding: 30px;
 }
 
-.hr_inazuma {
-  background-color: #fcd0b3;
-}
-
 .hr_mondstadt {
   background-color: #161a34;
+}
+
+.hr_liyue {
+  background-color: #AB6946;
+}
+
+.hr_inazuma {
+  background-color: #fcd0b3;
 }
 
 @media all and (min-width: 992px) {
