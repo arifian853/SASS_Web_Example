@@ -5,10 +5,10 @@ $text-color_mondstadt:#161a34;
 $text-color_mondstadt2:#234234;
 
 //Liyue
-$primary-color_liyue:#79f8a9;
-$secondary-color_liyue:#fae100;
-$text-color_liyue:#ff3333;
-$text-color_liyue2:#234234;
+$primary-color_liyue:#D2A881;
+$secondary-color_liyue:#AB6946 ;
+$text-color_liyue:#00202F;
+$text-color_liyue2:#161a34;
 //Inazuma
 $primary-color_inazuma: #161a34;
 $secondary-color_inazuma: #fcd0b3;
@@ -123,26 +123,26 @@ html {
 }
 
 .container_liyue {
-    background-color: $primary-color_mondstadt;
+    background-color: $primary-color_liyue;
     padding: $padding-box;
-    color: $text-color_mondstadt;
+    color: $text-color_liyue;
     border: 2px black;
     font-weight: 700;
 
     .title {
         font-size: 2em;
-        color: $text-color_mondstadt;
+        color: $text-color_liyue;
         font-weight: 700;
     }
     .text {
-        color: $text-color_mondstadt;
+        color: $text-color_liyue;
         font-family: $font-fam2;
         letter-spacing: 2px;
         font-weight: 700;
     }
     .link {
         text-decoration: none;
-        color : $text-color_mondstadt;
+        color : $text-color_liyue;
         font-weight: 700;
     }
     .link:hover {
@@ -199,19 +199,19 @@ html {
 }
 
 .container-main_liyue {
-    background-color: $secondary-color_mondstadt;
+    background-color: $secondary-color_liyue;
     margin : $margin-box;
     padding: $padding-box;
 
     .title-example {
-        color: $text-color_mondstadt2;
+        color: $text-color_liyue2;
         font-size: 1.4em;
         font-weight: 900;
     }
     .text-example {
         font-family: $font-fam2;
         font-size: 1em;
-        color : $text-color_mondstadt2;
+        color : $text-color_liyue2;
         letter-spacing: 2px;
         font-weight: 700;
     }
@@ -303,6 +303,59 @@ html {
 
 }
 
+.image-section_liyue {
+    background-color: $primary-color_liyue;
+    margin: $margin-box;
+    padding: $padding-box;
+    color: $text-color_liyue;
+    border: 2px solid $secondary-color_liyue;
+    font-weight: 700;
+
+    .img-size {
+        height: $img-height;
+        width: $img-width;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px 5px 0px black;
+    }
+    .img-size:hover {
+        box-shadow: 0px 0px 21px 5px #fcd0b3;
+    }
+
+    .img-text {
+        font-family: $font-fam2;
+        font-size: 1em;
+        color : $text-color_liyue;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .ele-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-style {
+        text-decoration: none;
+        padding: 10px;
+        background-color: $secondary-color_liyue;
+        color: $primary-color_liyue;
+        font-family: $font-fam;
+        font-weight: 700;
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 0px black;
+        width: 120px;
+        border: 2px $primary-color_liyue;
+        border-radius: 10px;
+    }
+    .button-style:hover {
+        box-shadow: 0px 0px 21px 5px #fcd0b3;
+    }
+
+}
+
 .image-section_inazuma {
     background-color: $primary-color_inazuma;
     margin: $margin-box;
@@ -364,8 +417,8 @@ html {
     font-weight: 700;
 }
 
-.ending-inazuma {
-    color: $text-color_inazuma;
+.ending-liyue {
+    color: $text-color_liyue;
     padding: $padding-box;
     font-weight: 700;
 }
@@ -384,12 +437,17 @@ html {
     padding: 30px;
 }
 
-.hr_inazuma {
-    background-color: $text-color_inazuma;
-}
 
 .hr_mondstadt {
     background-color: $text-color_mondstadt;
+}
+
+.hr_liyue {
+    background-color: $secondary-color_liyue;
+}
+
+.hr_inazuma {
+    background-color: $text-color_inazuma;
 }
 
 
